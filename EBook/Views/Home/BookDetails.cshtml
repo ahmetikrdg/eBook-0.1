@@ -1,0 +1,41 @@
+﻿@model BookDetailModel
+
+
+<div class="card mb-3 mt-3">
+    <div class="card-body">
+        <div class="row no-gutter">
+            <div class="col-md-3">
+                <img src="@Model.Book.Image" class="card-img" alt="">
+            </div>
+            <div class="col-md-9">
+                <h5 class="car-title">@Model.Book.BookName</h5>
+                <h6 class="card-text">@Model.Book.Pages</h6>
+
+                @foreach (var item in Model.Category)
+                {
+                    <a asp-controller="home" asp-action="booklist" asp-route-category="@item.Url" class="btn btn-link p-0 mb-3">@item.Tittle</a>
+                }
+                <hr>
+                <a  class="btn btn-primary btn-sm">@Model.Author.NameSurname</a> @*book details altındaki product bilgisine gidiyo giderkende productid gönderiyo biz id bilgisini alıyoruz ve o id bilgisine uyan kaydı book comtroller içerisinde kullanıcılara göstericez*@
+                <p class="card-text">@Model.Book.Description</p>
+                <a asp-controller="Home" asp-action="BookRead" asp-route-id="@Model.Book.BookId" class="btn btn-primary btn-sm">Oku</a> @*book details altındaki product bilgisine gidiyo giderkende productid gönderiyo biz id bilgisini alıyoruz ve o id bilgisine uyan kaydı book comtroller içerisinde kullanıcılara göstericez*@
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<div class="card-deck">
+    <div class="card">
+        @foreach (var item in (List<Book>)ViewBag.BookCategory)
+        {
+            <img src="@item.Image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@item.BookName</h5>
+                <p class="card-text">@item.Description</p>
+            </div>
+            
+        }
+    </div>
+</div>

@@ -1,0 +1,14 @@
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\bin\Debug\netstandard2.0\EBook.Business.deps.json
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\bin\Debug\netstandard2.0\EBook.Business.dll
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\bin\Debug\netstandard2.0\EBook.Business.pdb
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\bin\Debug\netstandard2.0\EBook.Data.dll
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\bin\Debug\netstandard2.0\EBook.Entity.dll
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\bin\Debug\netstandard2.0\EBook.Data.pdb
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\bin\Debug\netstandard2.0\EBook.Entity.pdb
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\obj\Debug\netstandard2.0\EBook.Business.csprojAssemblyReference.cache
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\obj\Debug\netstandard2.0\EBook.Business.AssemblyInfoInputs.cache
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\obj\Debug\netstandard2.0\EBook.Business.AssemblyInfo.cs
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\obj\Debug\netstandard2.0\EBook.Business.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\obj\Debug\netstandard2.0\EBook.Business.csproj.CopyComplete
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\obj\Debug\netstandard2.0\EBook.Business.dll
+C:\Users\Ahmet\source\repos\EBookApps\EBook.Business\obj\Debug\netstandard2.0\EBook.Business.pdb

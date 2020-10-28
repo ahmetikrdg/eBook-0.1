@@ -1,0 +1,51 @@
+﻿@model BookListViewModel
+
+
+<div class="row">
+    <div class="col-md-3">
+        @await Component.InvokeAsync("Categories")
+    </div>
+    @await Component.InvokeAsync("BookMiddle")
+
+    <div class="col-md-9">
+        @foreach (var item in Model.Books)
+        {
+            @await Html.PartialAsync("_BookList", item)
+        }
+    </div>
+</div>
+
+
+                    <div class="row">
+                        <div class="col">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <a class="page-link" href="/kitap?page=@(1)">Ana Sayfa</a>
+                                    @for (int i = 0; i < Model.pageInfo.TotalPages(); i++)
+                                    {
+                                        @if(string.IsNullOrEmpty(Model.pageInfo.CurrentCategory))//kategori dolumu boşmu
+                                        {
+                                            <li class="page-item @(Model.pageInfo.CurrentPage==i+1?"active":"")">@*o an hangi sayfa gösteriliyorsa o sayı i+1 e eşitse aktif olsun buton değilse pasif*@
+                                                <a class="page-link" href="/kitap?page=@(i+1)">@*controllerden page verilirse giderse ve zaten i+1 artacak oda eşitse buna basınca 1,2 ye gider*@
+                                                @(i+1) @*ekranda gösterilecek*@
+                                                </a>
+                                           </li>
+                                        }
+                                        else
+                                        {
+                                             <li class="page-item @(Model.pageInfo.CurrentPage==i+1?"active":"")">
+                                                <a class="page-link" href="/kitap/@Model.pageInfo.CurrentCategory?page=@(i+1)">
+                                                @(i+1)
+                                                </a>
+                                           </li>
+                                        }
+                                        
+                                    }
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+        </div>      
+    </div>
+</div>

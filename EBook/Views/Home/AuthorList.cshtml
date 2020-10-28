@@ -1,0 +1,8 @@
+﻿@model AuthorListViewModel
+
+@foreach (var item in Model.Authors)
+{
+
+    @await Html.PartialAsync("_AuthorList", item)
+
+}

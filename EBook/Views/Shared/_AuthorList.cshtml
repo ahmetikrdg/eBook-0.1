@@ -1,0 +1,11 @@
+﻿@model Author
+
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="@Model.Image" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@Model.NameSurname</h5>
+            <a asp-controller="Home" asp-action="AuthorDetail" asp-route-Yurl="@Model.Url" class="btn btn-primary btn-sm">İncele</a> @*book details altındaki product bilgisine gidiyo giderkende productid gönderiyo biz id bilgisini alıyoruz ve o id bilgisine uyan kaydı book comtroller içerisinde kullanıcılara göstericez*@
+        </div>
+    </div>
+

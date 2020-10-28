@@ -1,0 +1,26 @@
+﻿@model BookListViewModel
+
+@foreach (var item in Model.Books)
+{
+
+
+    <div class="card mb-2">
+        <img class="card-img-top" src="@item.Image" alt="">
+        <div class="card-body">
+            <h5 class="card-title">@item.BookName</h5>
+            <small class="text-muted">
+                <i class="fas fa-lira-sing"><h5>Sayfa Sayısı</h5> @item.Pages</i>
+            </small>
+        </div>
+        <div class="card-footer text-center">
+            <a asp-controller="home" asp-action="BookDetails" asp-route-url="@item.Url"><h3 style="font-size:14px">@item.BookName componentten gelen</h3></a>
+        </div>
+    </div>
+    <hr />
+    <hr>
+    <hr />
+    <hr>
+    <hr />
+
+}
+
